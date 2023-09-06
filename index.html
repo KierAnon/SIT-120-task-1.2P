@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>This is my website</h1>
+    <div class="content">
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu leo ut justo pellentesque accumsan ut iaculis libero. Nulla sed imperdiet eros. Donec gravida id metus eget cursus. Praesent vel varius lectus. Donec faucibus dignissim arcu id porttitor. Donec tempus ex neque, vel facilisis mauris hendrerit id. Nulla suscipit nisl et metus mollis mattis. Mauris ante ipsum, interdum at facilisis in, mattis nec turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin faucibus, augue sit amet pulvinar commodo, lacus ex maximus metus, et tempus metus sem eu lectus.</p>            
+
+            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum enim quam, tristique vitae felis at, eleifend condimentum mauris. Mauris rutrum arcu vitae dolor tristique, facilisis iaculis arcu dapibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin arcu libero, euismod vitae luctus eget, euismod nec ex. In porta nunc pulvinar leo laoreet laoreet. Maecenas id arcu sit amet felis iaculis egestas ut a mauris.</p>
+                
+            <p>Nam id venenatis orci, sed elementum est. Etiam elementum sem non metus gravida, ut molestie eros varius. Vivamus nisi sem, iaculis ac mauris eu, congue euismod leo. Phasellus congue vitae arcu rhoncus lobortis. Nam sed dolor volutpat, maximus lorem tincidunt, lobortis nisl. Nunc laoreet orci nec mauris sagittis, sed dapibus urna accumsan. Nunc bibendum semper erat, vitae laoreet arcu pellentesque vitae. Phasellus felis mauris, volutpat sit amet tincidunt quis, feugiat ut ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque consequat quam non tempor iaculis. Donec id leo a tortor pulvinar tincidunt. Aliquam nec venenatis lacus, vitae tempor elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu leo ut justo pellentesque accumsan ut iaculis libero. Nulla sed imperdiet eros. Donec gravida id metus eget cursus. Praesent vel varius lectus. Donec faucibus dignissim arcu id porttitor. Donec tempus ex neque, vel facilisis mauris hendrerit id. Nulla suscipit nisl et metus mollis mattis. Mauris ante ipsum, interdum at facilisis in, mattis nec turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin faucibus, augue sit amet pulvinar commodo, lacus ex maximus metus, et tempus metus sem eu lectus.</p>            
+
+            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum enim quam, tristique vitae felis at, eleifend condimentum mauris. Mauris rutrum arcu vitae dolor tristique, facilisis iaculis arcu dapibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin arcu libero, euismod vitae luctus eget, euismod nec ex. In porta nunc pulvinar leo laoreet laoreet. Maecenas id arcu sit amet felis iaculis egestas ut a mauris.</p>
+                
+            
+        </div>
+        <div>
+    <img src="https://placehold.co/300x150"/>
+    <img src="https://placehold.co/200x100"/>
+    <img src="https://placehold.co/250x200"/>
+    </div>
+    </div>
+    <h3>String functions</h3>
+    <p id="length">string length</p>
+    <p id="length-output"></p>
+    <p id="replace">string replace</p>
+    <p id="replace-output"></p>
+    <p id="uppercase">string uppercase</p>
+    <p id="uppercase-output"></p>
+    <p id="charat">string charat</p>
+    <p id="charat-output"></p>
+    <p id="slice">string slice</p>
+    <p id="slice-output"></p>
+    <h3>Number functions</h3>
+    <p>number toFixed</p>
+    <p id="toFixed"></p>
+    <p id="toFixed-output"></p>
+    <p>number parseInt</p>
+    <p id="parseInt"></p>
+    <p id="parseInt-output"></p>
+    <p>number toExponential</p>
+    <p id="toExponential"></p>
+    <p id="toExponential-output"></p>
+    <p>number valueOf</p>
+    <p id="valueOf"></p>
+    <p id="valueOf-output"></p>
+    <p>number toString</p>
+    <p id="toString"></p>
+    <p id="toString-output"></p>
+    <h3>Array methods</h3>
+    <p>array length</p>
+    <p id="arrayLength"></p>
+    <p id="arrayLength-output"></p>
+    <p>array push</p>
+    <p id="arrayPush"></p>
+    <p id="arrayPush-output"></p>
+    <p>array pop</p>
+    <p id="arrayPop"></p>
+    <p id="arrayPop-output"></p>
+    <p>array join</p>
+    <p id="arrayJoin"></p>
+    <p id="arrayJoin-output"></p>
+    <p>array shift</p>
+    <p id="arrayShift"></p>
+    <p id="arrayShift-output"></p>
+    <h3>Date methods</h3>
+    <p>date toString</p>
+    <p id="dateToString"></p>
+    <p id="dateToString-output"></p>
+    <p>date toUTCString</p>
+    <p id="dateToUTCString-output"></p>
+    <p>date valueOf</p>
+    <p id="dateValueOf-output"></p>
+    <p>date setFullYear</p>
+    <p id="dateSetFullYear-output"></p>
+    <p>date setHours</p>
+    <p id="dateSetHours-output"></p>
+
+
+    <script>
+        // string methods
+        document.getElementById("length-output").innerHTML = document.getElementById("length").innerHTML.length;
+        document.getElementById("replace-output").innerHTML = document.getElementById("replace").innerHTML.replace("string", "12345");
+        document.getElementById("uppercase-output").innerHTML = document.getElementById("uppercase").innerHTML.toUpperCase();
+        document.getElementById("charat-output").innerHTML = document.getElementById("charat").innerHTML.charAt(0);
+        document.getElementById("slice-output").innerHTML = document.getElementById("slice").innerHTML.slice(4);
+
+        // number methods
+        document.getElementById("toFixed").innerHTML = 21.234;
+        document.getElementById("toFixed-output").innerHTML = 21.234.toFixed(1);
+        document.getElementById("parseInt").innerHTML = 21.234;
+        document.getElementById("parseInt-output").innerHTML = parseInt("21.234")
+        document.getElementById("toExponential").innerHTML = 9;
+        let x = 9;
+        document.getElementById("toExponential-output").innerHTML = x.toExponential(2)
+        document.getElementById("valueOf").innerHTML = "20 + 10";        
+        document.getElementById("valueOf-output").innerHTML = (20 + 10).valueOf();
+        document.getElementById("toString").innerHTML = 123
+        document.getElementById("toString-output").innerHTML = (123).toString();
+
+        // array methods
+        let fruits = ["banana", "apple", "pear"];
+        document.getElementById("arrayLength").innerHTML = fruits;
+        document.getElementById("arrayLength-output").innerHTML = fruits.length;
+        document.getElementById("arrayPush").innerHTML = fruits;
+        fruits.push('lemon');
+        document.getElementById("arrayPush-output").innerHTML = fruits;
+        document.getElementById("arrayPop").innerHTML = fruits;
+        fruits.pop();
+        document.getElementById("arrayPop-output").innerHTML = fruits;
+        let numbers = [1, 2, 3, 4, 5];
+        document.getElementById("arrayJoin").innerHTML = numbers;
+        document.getElementById("arrayJoin-output").innerHTML = numbers.join(" - ");
+        document.getElementById("arrayShift").innerHTML = numbers;
+        document.getElementById("arrayShift-output").innerHTML = numbers.shift();
+        
+        // date methods
+        const d = new Date();
+        document.getElementById("dateToString-output").innerHTML = d.toString();
+        document.getElementById("dateToUTCString-output").innerHTML = d.toUTCString();
+        document.getElementById("dateValueOf-output").innerHTML = d.valueOf();
+        d.setFullYear(1999)
+        document.getElementById("dateSetFullYear-output").innerHTML = d.toString();
+        d.setHours(9)
+        document.getElementById("dateSetHours-output").innerHTML = d.toString();
+        
+        // function methods
+        function doubleValues(arr) {
+            return arr.map(function(value) {
+                return value * 2;
+            });
+        }
+
+        let numbers2 = [1, 2, 3, 4];
+        let doubled = doubleValues(numbers2);
+        console.log(doubled); // Output: [2, 4, 6, 8]
+
+        
+        function convertToUpperCase(str) {
+            return str.toUpperCase();
+        }
+
+        let lowerCaseString = "hello";
+        let upperCaseString = convertToUpperCase(lowerCaseString);
+        console.log(upperCaseString); // Output: "HELLO"
+    </script>
+</body>
+</html>
